@@ -6,7 +6,7 @@ const moreStyles = {
 }
 
 export default () => (
-  <header style={moreStyles} class="flex sticky z-50 top-0 left-0 items-center h-16 border-b opacity-90 bg-white">
-      <Link to={"/"}><div class="mt-1 mb-2 text-2xl ml-5">tenzyu.com</div></Link>
+  <header style={moreStyles} class="flex sticky z-50 top-0 left-0 items-center h-16 border-b opacity-90 bg-white mb-4">
+      <Link to={"/"}><div class="my-auto ml-5 text-xl">tenzyu.com</div></Link>
   </header>
 )
