@@ -80,5 +80,39 @@ export default () => (
         </ul>
       </div>
     </section>
+
+    <h2 class="mx-4 sm:mx-auto sm:max-w-sm text-2xl font-bold mb-3"><span style={firstLetterStyles}>C</span>ontents</h2>
+    <section id="contents" class="mx-4 sm:mx-auto sm:max-w-sm mb-6">
+      <div class="mb-3">
+        <h3>Repositories</h3>
+        <ul class="space-y-1">
+          <li>
+            <a href="https://github.com/tenzyu/tenzyu.com" target="_blank">
+              <img src="https://gh-card.dev/repos/tenzyu/tenzyu.com.svg" alt="github: tenzyu.com" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/tenzyu/simple-thread" target="_blank">
+              <img src="https://gh-card.dev/repos/tenzyu/simple-thread.svg" alt="github: simple-thread" /></a>
+          </li>
+          <li>
+            <a href="https://github.com/mii-group/Wikipedian" target="_blank">
+              <img src="https://gh-card.dev/repos/mii-group/Wikipedian.svg" alt="github: Wikipedian" /></a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>Movies</h3>
+        <ul class="space-y-1">
+          <li>
+            <iframe class="min-w-full min-h-full" loading="lazy" alt="youtube: Rubik's Cube" src="https://www.youtube.com/embed/videoseries?list=PLoiZYW6bTQE_LCU-eEJWUeSMY17_D_sLz" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </li>
+          <li>
+            <iframe class="min-w-full min-h-full" loading="lazy" alt="youtube: Minecraft" src="https://www.youtube.com/embed/UC81sz5kWOM?list=PLKX8chi9DIBmv8crb-9WEsO744LJ79YsR" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </li>
+        </ul>
+      </div>
+
+    </section>
   </Layout>
 )
