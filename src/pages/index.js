@@ -4,6 +4,11 @@ import Image from "../components/image"
 import Meta from "../components/meta"
 
 
+const firstLetterStyles = {
+    borderBottom: "solid 3px",
+    fontSize: "1.35em",
+}
+
 // data
 const facts = [
   {
@@ -44,7 +49,8 @@ export default () => (
       title="Homepage"
       desc="tenzyu.com is the website that has written my Accounts, Contents and Profile, hosted by me."
     />
-    <section id="profile" class="mx-4 sm:mx-auto sm:max-w-sm">
+    <h2 class="mx-4 sm:mx-auto sm:max-w-sm text-2xl font-bold mb-3"><span style={firstLetterStyles}>P</span>rofile</h2>
+    <section id="profile" class="mx-4 sm:mx-auto sm:max-w-sm mb-6">
       <div id="bio" class="memo__profile flex mb-3">
         <div class="w-1/3 rounded-full">
         <Image filename="icon-me.png" alt="me"/>
