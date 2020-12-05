@@ -7,6 +7,6 @@ const moreStyles = {
 
 export default () => (
   <header style={moreStyles} class="flex sticky z-50 top-0 left-0 items-center h-16 border-b opacity-90 bg-white">
-      <Link to={"/"}><div class="mt-1 mb-2 text-2xl ml-6">tenzyu.com</div></Link>
+      <Link to={"/"}><div class="mt-1 mb-2 text-2xl ml-5">tenzyu.com</div></Link>
   </header>
 )
