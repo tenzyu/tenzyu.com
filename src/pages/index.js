@@ -43,6 +43,51 @@ const facts = [
   },
 ]
 
+const links = [
+  {
+    image: "account-github.png",
+    name: "GitHub",
+    meta: "tenzyu",
+    url: "https://github.com/tenzyu"
+  },
+  {
+    image: "account-youtube.png",
+    name: "YouTube",
+    meta: "tenzyu",
+    url: "https://www.youtube.com/channel/UCnlpsS3qhWUhNwd2yc_D4cw"
+  },
+  {
+    image: "account-spotify.png",
+    name: "Spotify",
+    meta: "tenzyu",
+    url: "https://open.spotify.com/user/kuv8bpy5ocbl8mwspxymi1six?si=6BAjQnRHQdan6qrCOkudTg"
+  },
+  {
+    image: "account-twitter.png",
+    name: "Twitter",
+    meta: "@tenzyumasuda",
+    url: "https://twitter.com/tenzyumasuda"
+  },
+  {
+    image: "account-instagram.png",
+    name: "Instagram",
+    meta: "@tenzyumasuda",
+    url: "https://instagram.com/tenzyumasuda"
+  },
+  {
+    image: "account-market.png",
+    name: "メルカリ",
+    meta: "升田 天珠",
+    url: "https://www.mercari.com/jp/u/694596800/"
+  },
+  {
+    image: "account-discord.png",
+    name: "Discord",
+    meta: "Click to join our server.",
+    url: "https://discord.gg/8DrwSxd"
+  },
+]
+
 export default () => (
   <Layout>
     <Meta
@@ -61,8 +106,8 @@ export default () => (
         </div>
       </div>
       <div id="actions" class="flex space-x-4 mb-2">
-        <a class="block w-1/2 py-1 font-light text-sm text-center border rounded-md hover:bg-gray-100" href="mailto:tenzyu.off@gmail.com" target="_blank">E-MAIL</a>
-        <a class="block w-1/2 py-1 font-light text-sm text-center border rounded-md hover:bg-gray-100" href="https://www.paypal.me/masudatenzyu" target="_blank">DONATE</a>
+        <a class="block w-1/2 py-1 font-light text-sm text-center border rounded-lg hover:bg-gray-100" href="mailto:tenzyu.off@gmail.com" target="_blank">E-MAIL</a>
+        <a class="block w-1/2 py-1 font-light text-sm text-center border rounded-lg hover:bg-gray-100" href="https://www.paypal.me/masudatenzyu" target="_blank">DONATE</a>
       </div>
       <div id="facts">
         <ul class="grid grid-cols-2 gap-x-2">
@@ -112,7 +157,25 @@ export default () => (
           </li>
         </ul>
       </div>
+    </section>
 
+    <h2 class="mx-4 sm:mx-auto sm:max-w-sm text-2xl font-bold mb-3"><span style={firstLetterStyles}>L</span>inks</h2>
+    <section id="links" class="mx-4 sm:mx-auto sm:max-w-sm mb-6">
+    <ul class="space-y-1">
+        {links.map(link => (
+          <li class="border rounded-lg hover:bg-gray-100">
+            <a class="flex" href={link.url} target="_blank">
+              <div class="w-1/5 mr-2 my-auto p-1">
+                <Image filename={link.image} alt={link.name} />
+              </div>
+              <div class="w-4/5 my-1">
+                <div class="text-lg font-light text-gray-800">{link.name}</div>
+                <div class="text-md font-thin text-gray-500">{link.meta}</div>
+              </div>
+            </a>
+          </li>
+        ))}
+        </ul>
     </section>
   </Layout>
 )
