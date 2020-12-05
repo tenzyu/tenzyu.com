@@ -34,5 +34,8 @@
     "react-helmet": "^6.1.0"
   },
   "main": "index.js",
-  "repository": "https://github.com/tenzyu/tenzyu.com"
+  "repository": "https://github.com/tenzyu/tenzyu.com",
+  "devDependencies": {
+    "tailwindcss": "^2.0.1"
+  }
 }

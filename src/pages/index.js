@@ -11,7 +11,7 @@ export default () => (
     />
     <div>
       <p>writing</p>
-      <Image filename="icon-me.jpg" alt="me" />
+      <Image filename="icon-me.jpg" alt="me"/>
     </div>
   </Layout>
 )
