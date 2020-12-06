@@ -19,7 +19,15 @@ module.exports = {
         icon: `src/images/icon-app.png`,
       },
     },
-    "gatsby-plugin-mdx",
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: ['.mdx'],
+        defaultLayouts: {
+          default: require.resolve('./src/components/article.js')
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -32,8 +40,15 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: "blogs",
+        path: `${__dirname}/src/blogs/`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         name: "pages",
-        path: "./src/pages/",
+        path: `${__dirname}/src/pages/`,
       },
       __key: "pages",
     },

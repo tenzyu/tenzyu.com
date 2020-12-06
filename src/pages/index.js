@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../layouts/default"
 import Image from "../components/image"
 import Meta from "../components/meta"
 import Section from "../components/section" 
@@ -97,7 +97,7 @@ const links = [
   },
   {
     image: "link-market.png",
-    name: "メルカリ",
+    name: "Mercari",
     meta: "升田 天珠",
     url: "https://www.mercari.com/jp/u/694596800/"
   },
