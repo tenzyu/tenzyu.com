@@ -2,13 +2,9 @@ import React from "react"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import Meta from "../components/meta"
+import Section from "../components/section" 
 
 // styles
-const firstLetterStyles = {
-    borderBottom: "solid 3px",
-    fontSize: "1.35em",
-}
-
 const youtubeStyles = {
     paddingTop: "56.25%",
   }
@@ -125,14 +121,14 @@ export default () => (
       title="Homepage"
       desc="tenzyu.com is the website that has written my Accounts, Contents and Profile, hosted by me."
     />
-    <h2 class="mx-4 sm:mx-auto sm:max-w-sm text-2xl font-bold mb-3"><span style={firstLetterStyles}>P</span>rofile</h2>
-    <section id="profile" class="mx-4 sm:mx-auto sm:max-w-sm mb-6">
-      <div id="bio" class="memo__profile flex mb-3">
+    
+    <Section title="Profile">
+      <div id="bio" class="flex mb-3">
         <div class="w-1/3 rounded-full">
         <Image filename="icon-me.png" alt="me"/>
         </div>
         <div class="ml-3 w-2/3 pt-3">
-          <h2 class="text-xl leading-loose h-2/5 text-gray-700 font-bold">Tenzyu Masuda</h2>
+          <h3 class="text-xl leading-loose h-2/5 text-gray-700 font-bold">Tenzyu Masuda</h3>
           <p class="text-sm font-light text-gray-600">a technical high schooler, Coder and Rubik's Cuber from Japan.</p>
         </div>
       </div>
@@ -155,10 +151,9 @@ export default () => (
         ))}
         </ul>
       </div>
-    </section>
+    </Section>
 
-    <h2 class="mx-4 sm:mx-auto sm:max-w-sm text-2xl font-bold mb-3"><span style={firstLetterStyles}>C</span>ontents</h2>
-    <section id="contents" class="mx-4 sm:mx-auto sm:max-w-sm mb-6">
+    <Section title="Contents">
       <div class="mb-3">
         <h3 class="text-lg mb-2">Repositories</h3>
         <ul class="space-y-2 mb-3">
@@ -187,10 +182,9 @@ export default () => (
         ))}
         </ul>
       </div>
-    </section>
+    </Section>
 
-    <h2 class="mx-4 sm:mx-auto sm:max-w-sm text-2xl font-bold mb-3"><span style={firstLetterStyles}>L</span>inks</h2>
-    <section id="links" class="mx-4 sm:mx-auto sm:max-w-sm mb-6">
+    <Section title="Links">
     <ul class="space-y-1">
         {links.map(link => (
           <li class="border rounded-lg border-gray-300 hover:bg-gray-100">
@@ -206,6 +200,6 @@ export default () => (
           </li>
         ))}
         </ul>
-    </section>
+    </Section>
   </Layout>
 )
