@@ -11,15 +11,15 @@ class BlogIndex extends React.Component {
       return (
         <Layout>
             <Meta title="Blog" desc="ブログ一覧" />
-            <div class="mx-4 sm:mx-auto sm:max-w-2xl">
+            <div class="container mx-auto px-4 mb-3">
             {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
                 return (
-                <div class="p-5 mb-4 border-b border-gray-400" key={node.fields.slug}>
+                <div class="p-3 mb-3 border-b border-gray-400" key={node.fields.slug}>
                     <h3 class="text-2xl text-blue-500"><Link to={node.fields.slug}>{title}</Link></h3>
-                    <div class="text-md">
+                    <div>
                         <p>{node.excerpt}</p>
-                        <p class="pt-2 text-xs font-light text-gray-600">{node.frontmatter.date}</p>
+                        <p class="pt-3 text-xs font-light text-gray-600">{node.frontmatter.date}</p>
                     </div>
                 </div>
                 )

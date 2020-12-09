@@ -121,14 +121,14 @@ export default () => (
       title="Homepage"
       desc="tenzyu.com is the website that has written my Accounts, Contents and Profile, hosted by me."
     />
-    
+    <main class='flex flex-wrap'>
     <Section title="Profile">
-      <div id="bio" class="flex mb-3 sm:justify-center">
-        <div class="w-1/3 rounded-full sm:w-32">
+      <div id="bio" class="flex mb-3 items-center justify-center">
+        <div class="rounded-full w-32">
         <Image filename="icon-me.png" alt="me"/>
         </div>
-        <div class="ml-3 w-2/3 pt-3">
-          <h3 class="text-xl leading-loose h-2/5 text-gray-700 font-bold">Tenzyu Masuda</h3>
+        <div class="ml-3 items-center justify-center lg:w-2/3">
+          <h3 class="text-xl text-gray-700 font-bold">Tenzyu Masuda</h3>
           <p class="text-sm font-light text-gray-600">a technical high schooler, Coder and Rubik's Cuber from Japan.</p>
         </div>
       </div>
@@ -137,7 +137,7 @@ export default () => (
         <a class="block w-1/2 py-2 font-light text-sm text-center border rounded-lg hover:bg-gray-100" href="https://www.paypal.me/masudatenzyu" rel="noreferrer noopener" target="_blank">DONATE</a>
       </div>
       <div id="facts">
-        <ul class="grid grid-cols-2 gap-x-4  md:grid-cols-3 md:gap-x-0">
+        <ul class="grid grid-cols-2 gap-x-4  sm:grid-cols-3 sm:gap-x-0">
         {facts.map(fact => (
           <li class="flex mb-2">
             <div class="w-1/5 my-1 mr-2">
@@ -156,7 +156,7 @@ export default () => (
     <Section title="Contents">
       <div class="mb-3">
         <h3 class="text-lg mb-2">Repositories</h3>
-        <ul class="space-y-2 mb-3 md:space-y-0 md:grid md:grid-cols-2 md:gap-2">
+        <ul class="space-y-2 mb-3 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-2">
           <li>
             <a href="https://github.com/tenzyu/tenzyu.com" rel="noreferrer noopener" target="_blank">
               <img class="w-full" src="https://gh-card.dev/repos/tenzyu/tenzyu.com.svg" alt="github: tenzyu.com" />
@@ -174,7 +174,7 @@ export default () => (
       </div>
       <div>
         <h3 class="text-lg mb-2">Movies</h3>
-        <ul class="space-y-2 md:space-y-0 md:grid md:grid-cols-2 md:gap-2">
+        <ul class="space-y-2 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-2">
         {youtubes.map(youtube => (
           <li class="overflow-hidden h-0 relative w-full" style={youtubeStyles}>
             <iframe title={youtube.alt} class="h-full left-0 absolute top-0 w-full rounded-lg" loading="lazy" alt={youtube.alt} src={youtube.src} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -185,11 +185,11 @@ export default () => (
     </Section>
 
     <Section title="Links">
-    <ul class="space-y-1 md:space-y-0 md:grid md:grid-cols-2 md:gap-2">
+    <ul class="space-y-1 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-2">
         {links.map(link => (
           <li class="border rounded-lg border-gray-300 hover:bg-gray-100">
             <a class="flex" href={link.url} rel="noreferrer noopener" target="_blank">
-              <div class="w-1/5 p-2.5">
+              <div class="w-1/5 p-2.5 lg:w-16">
                 <Image filename={link.image} alt={link.name} />
               </div>
               <div class="w-4/5 my-auto">
@@ -201,5 +201,6 @@ export default () => (
         ))}
         </ul>
     </Section>
+    </main>
   </Layout>
 )

@@ -4,8 +4,8 @@ import "../styles/moreStyles.module.css"
 export default props => {
     const title = props.title;
     return (
-        <section id={title} class="mx-4 max-w-screen-md mb-6 md:mx-auto">
-            <h2 class="max-w-screen-md text-2xl font-bold mb-3 tracking-wider md:mx-auto">{title}</h2>
+        <section id={title} class="container mx-auto px-4 mb-3 lg:w-1/3">
+            <h2 class="text-2xl font-bold mb-3 tracking-wider">{title}</h2>
             {props.children}
         </section>
     )
