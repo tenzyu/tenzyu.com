@@ -121,7 +121,6 @@ export default () => (
       title="Homepage"
       desc="tenzyu.com is the website that has written my Accounts, Contents and Profile, hosted by me."
     />
-    <main class='flex flex-wrap'>
     <Section title="Profile">
       <div id="bio" class="flex mb-3 items-center justify-center">
         <div class="rounded-full w-32">
@@ -201,6 +200,5 @@ export default () => (
         ))}
         </ul>
     </Section>
-    </main>
   </Layout>
 )
