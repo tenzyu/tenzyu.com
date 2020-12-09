@@ -188,7 +188,7 @@ export default () => (
         {links.map(link => (
           <li class="border rounded-lg border-gray-300 hover:bg-gray-100">
             <a class="flex" href={link.url} rel="noreferrer noopener" target="_blank">
-              <div class="w-1/5 p-2.5 lg:w-16">
+              <div class="w-1/5 p-2.5">
                 <Image filename={link.image} alt={link.name} />
               </div>
               <div class="w-4/5 my-auto">
