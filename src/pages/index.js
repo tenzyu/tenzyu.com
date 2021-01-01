@@ -110,7 +110,7 @@ const links = [
   {
     image: "link-wishlist.png",
     name: "Amazon",
-    meta: "Click to jump to my wishlist",
+    meta: "Click to jump to my wishlist.",
     url: "https://www.amazon.jp/hz/wishlist/ls/34YAIK53SZJQD?ref_=wl_share"
   },
 ]
