@@ -1,30 +1,31 @@
-<!-- @format -->
-
 # tenzyu.com
 
-> This is a website that has written my Accounts, Contents and Profile.
+This is a website that has written my Accounts, Contents and Profile.
 
-> [Go to Website](https://tenzyu.com/)
+Simply, it's like my contact info.
 
-## Development
+> [Go to tenzyu.com](https://tenzyu.com/)
 
-tenzyu.com is written utilizing react and gatsby.
+<br />
 
-`$ yarn install`
+## For Testers
 
-`$ yarn start`
+tenzyu.com is written utilizing react with gatsby.
+
+`$ npm i` for setup
+
+`$ npm run start` for development
 
 ### Note
 
 - Most of the CSS has not been tested on real machines.
 - The only environment I checked for tenzyu.com is Safari on macOS.
 - The hosting service I'm using to run this is Netlify.
+- The code editor I use is Visual Studio Code.
+- tenzyu.com is under [MIT license](https://github.com/tenzyu/tenzyu.com/blob/master/LICENSE).
 
-### Author
+### If you find an issue
 
-- Tenzyu Masuda
-- Twitter : <https://twitter.com/tenzyumasuda>
+Please [create a new issue](https://github.com/tenzyu/tenzyu.com/issues/new/choose) in English or Japanese.
 
-### License
-
-tenzyu.com is under [MIT license](https://github.com/tenzyu/tenzyu.com/blob/master/LICENSE).
+If you have any questions, please feel free to send me a message. The contact information for me is summarized [here](https://tenzyu.com/#Links).
