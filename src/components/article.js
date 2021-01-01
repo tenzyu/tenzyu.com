@@ -2,11 +2,16 @@ import React from 'react'
 import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer"
 import { Link, graphql } from 'gatsby'
 import Layout from "../layouts/default"
+import Meta from "./meta"
 import "../styles/normalize.module.css"
 
 export default function Article({ data: { mdx } }) {
     return(
     <Layout>
+        <Meta
+            title={mdx.frontmatter.title}
+            desc="an article. click to read more."
+        />
         <div class="mx-4 sm:mx-auto sm:max-w-2xl">
             <h1>{mdx.frontmatter.title}</h1>
             <MDXRenderer>{mdx.body}</MDXRenderer>
