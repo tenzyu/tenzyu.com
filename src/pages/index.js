@@ -104,8 +104,8 @@ const links = [
   {
     image: "link-discord.png",
     name: "Discord",
-    meta: "Click to join our server.",
-    url: "https://discord.gg/8DrwSxd"
+    meta: "Click to join our place to talk.",
+    url: "https://discord.gg/vJGebgRw"
   },
   {
     image: "link-wishlist.png",
