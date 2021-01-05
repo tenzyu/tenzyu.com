@@ -113,6 +113,12 @@ const links = [
     meta: "Click to jump to my wishlist.",
     url: "https://www.amazon.jp/hz/wishlist/ls/34YAIK53SZJQD?ref_=wl_share"
   },
+  {
+    image: "link-search.png",
+    name: "Search",
+    meta: 'Click to search for "tenzyu masuda".',
+    url: "https://www.google.com/search?q=tenzyu+masuda"
+  },
 ]
 
 export default () => (
