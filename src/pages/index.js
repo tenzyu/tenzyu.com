@@ -198,7 +198,7 @@ export default () => (
                 <Image filename={link.image} alt={link.name} />
               </div>
               <div class="w-4/5 my-auto">
-                <div class="text-lg text-gray-800 mb-1">{link.name}</div>
+                <div class="text-lg text-gray-800">{link.name}</div>
                 <div class="text-md font-light text-gray-600">{link.meta}</div>
               </div>
             </a>
