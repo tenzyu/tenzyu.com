@@ -145,7 +145,7 @@ export default () => (
         <ul class="grid grid-cols-2 gap-x-4  sm:grid-cols-3 sm:gap-x-0">
         {facts.map(fact => (
           <li class="flex mb-2">
-            <div class="w-1/5 my-1 mr-2">
+            <div class="w-1/5 my-1 mr-2 sm:w-12">
               <Image filename={fact.image} alt={fact.name} />
             </div>
             <div class="w-4/5 my-auto">
@@ -194,7 +194,7 @@ export default () => (
         {links.map(link => (
           <li class="border rounded-lg border-gray-300 hover:bg-gray-100">
             <a class="flex" href={link.url} rel="noreferrer noopener" target="_blank">
-              <div class="w-1/5 p-2.5">
+              <div class="w-1/5 p-2.5 sm:w-16">
                 <Image filename={link.image} alt={link.name} />
               </div>
               <div class="w-4/5 my-auto">
