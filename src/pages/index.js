@@ -161,7 +161,7 @@ export default () => (
     <Section title="Contents">
       <div class="mb-3">
         <h3 class="text-lg mb-2">Repositories</h3>
-        <ul class="space-y-2 mb-3 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-2">
+        <ul class="space-y-2 mb-3 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-2 lg:grid-cols-3">
           <li>
             <a href="https://github.com/tenzyu/tenzyu.com" rel="noreferrer noopener" target="_blank">
               <img class="w-full" src="https://gh-card.dev/repos/tenzyu/tenzyu.com.svg" alt="github: tenzyu.com" />
@@ -179,7 +179,7 @@ export default () => (
       </div>
       <div>
         <h3 class="text-lg mb-2">Movies</h3>
-        <ul class="space-y-2 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-2">
+        <ul class="space-y-2 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-2 lg:grid-cols-3">
         {youtubes.map(youtube => (
           <li class="overflow-hidden h-0 relative w-full" style={youtubeStyles}>
             <iframe title={youtube.alt} class="h-full left-0 absolute top-0 w-full rounded-lg" loading="lazy" alt={youtube.alt} src={youtube.src} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -190,7 +190,7 @@ export default () => (
     </Section>
 
     <Section title="Links">
-    <ul class="space-y-1 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-2">
+    <ul class="space-y-1 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-2 lg:grid-cols-3">
         {links.map(link => (
           <li class="border rounded-lg border-gray-300 hover:bg-gray-100">
             <a class="flex" href={link.url} rel="noreferrer noopener" target="_blank">
