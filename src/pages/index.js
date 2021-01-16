@@ -172,8 +172,8 @@ export default () => (
               <img class="w-full" src="https://gh-card.dev/repos/tenzyu/simple-thread.svg" alt="github: simple-thread" /></a>
           </li>
           <li>
-            <a href="https://github.com/mii-group/Wikipedian" rel="noreferrer noopener" target="_blank">
-              <img class="w-full" src="https://gh-card.dev/repos/mii-group/Wikipedian.svg" alt="github: Wikipedian" /></a>
+            <a href="https://github.com/mii-community/Wikipedian" rel="noreferrer noopener" target="_blank">
+              <img class="w-full" src="https://gh-card.dev/repos/mii-community/Wikipedian.svg" alt="github: Wikipedian" /></a>
           </li>
         </ul>
       </div>
