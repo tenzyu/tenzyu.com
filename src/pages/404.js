@@ -1,17 +1,18 @@
-import React from "react"
-import Layout from "../layouts/default"
-import Meta from "../components/meta"
-import Section from "../components/section"
-import { Link } from "gatsby"
-
+import React from "react";
+import Layout from "../layouts/default";
+import Meta from "../components/meta";
+import Section from "../components/section";
+import { Link } from "gatsby";
 
 const NotFoundPage = () => (
-    <Layout>
-        <Meta title="404" />
-        <Section title="Page Not Found">
-        <h3><Link to="/">Go Back</Link></h3>
-        </Section>
-    </Layout>
+  <Layout>
+    <Meta title="404" />
+    <Section title="Page Not Found">
+      <h3>
+        <Link to="/">Go Back</Link>
+      </h3>
+    </Section>
+  </Layout>
 );
 
-export default NotFoundPage
+export default NotFoundPage;

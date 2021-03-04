@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 
 const Footer = () => (
-  <footer class="mt-4 py-8 flex justify-center">
+  <footer class="h-16 mt-4 flex justify-center items-center">
     <small>© Tenzyu Masuda</small>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;
