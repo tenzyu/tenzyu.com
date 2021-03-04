@@ -1,27 +1,9 @@
 # tenzyu.com
 
-This is a website that has written my Accounts, Contents and Profile.
-
-Simply, it's like my contact info.
+This is my website.
 
 > [Go to tenzyu.com](https://tenzyu.com/)
 
-<br />
-
-## For Testers
-
-tenzyu.com is written utilizing react with gatsby.
-
-`$ npm i` for setup
-
-`$ npm run start` for development
-
-### Note
-
-- Most of the CSS has not been tested on real machines.
-- The only environment I checked for tenzyu.com is Safari on macOS.
-- The hosting service I'm using to run this is Netlify.
-- The code editor I use is Visual Studio Code.
 - tenzyu.com is under [MIT license](https://github.com/tenzyu/tenzyu.com/blob/master/LICENSE).
 
 ### If you find an issue

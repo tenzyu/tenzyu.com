@@ -1,12 +1,22 @@
-import React from "react"
-import '../utils/global.css'
-import Header from "../components/header"
-import Footer from "../components/footer"
+import React from "react";
+import "../styles/global.css";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
-export default ({ children }) => (
+const Styles = {
+  /* 
+    160px は header + footer
+    1px は スクロールバーがあるときとないときの横幅のズレをなくすため
+    */
+  minHeight: "calc(100vh - 160px + 1px)",
+};
+
+const DefaultLayout = ({ children }) => (
   <>
     <Header />
-    {children}
+    <div style={Styles}>{children}</div>
     <Footer />
   </>
-)
+);
+
+export default DefaultLayout;

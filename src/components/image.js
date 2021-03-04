@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-export default props => {
+const Image = props => {
   const { allImageSharp } = useStaticQuery(graphql`
     query {
       allImageSharp {
@@ -27,3 +27,5 @@ export default props => {
     </figure>
   )
 }
+
+export default Image

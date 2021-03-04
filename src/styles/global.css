@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a, button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* no highlighting */
+}
+
+html {
+  background-color: #181818;
+  color: #ddd
+}
+
+header, footer {
+  background-color:#111;
+}
+
+.inverted {
+  filter: invert(1)
+}
+
+.my-action-button{
+  @apply block px-8 py-2 font-light text-sm text-center rounded-lg border border-gray-100 duration-200
+}
+
+.my-action-button:hover{
+  @apply bg-gray-100 text-gray-900 
+}
