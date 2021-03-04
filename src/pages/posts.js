@@ -3,14 +3,14 @@ import { Link, graphql } from "gatsby";
 import Layout from "../layouts/default";
 import Meta from "../components/meta";
 
-class BlogIndex extends React.Component {
+class PostsIndex extends React.Component {
   render() {
     const { data } = this.props;
     const posts = data.allMdx.edges;
 
     return (
       <Layout>
-        <Meta title="Blog" desc="ブログ一覧" />
+        <Meta title="Posts" desc="記事一覧" />
         <div class="container mx-auto px-4 mb-3">
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug;
@@ -37,10 +37,10 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex;
+export default PostsIndex;
 
 export const pageQuery = graphql`
-  query Blogs {
+  query Posts {
     allMdx(sort: { fields: frontmatter___date, order: DESC }) {
       edges {
         node {

@@ -22,9 +22,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: ['.mdx'],
+        extensions: [".mdx"],
         defaultLayouts: {
-          default: require.resolve('./src/components/article.js')
+          default: require.resolve("./src/components/article.js"),
         },
       },
     },
@@ -40,8 +40,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "blogs",
-        path: `${__dirname}/src/blogs/`,
+        name: "posts",
+        path: `${__dirname}/src/posts/`,
       },
     },
     {

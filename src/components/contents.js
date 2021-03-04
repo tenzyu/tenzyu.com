@@ -38,7 +38,7 @@ const Contents = () => (
       <h3 class="text-lg mb-2">Repositories</h3>
       <ul class="space-y-2 mb-3 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-2 lg:grid-cols-3">
         {repositories.map((repository) => (
-          <li>
+          <li class="max-w-sm">
             <a
               href={`https://github.com/${repository.username}/${repository.repo}`}
               rel="noreferrer noopener"
@@ -56,7 +56,7 @@ const Contents = () => (
     </div>
     <div>
       <h3 class="text-lg mb-2">Movies</h3>
-      <ul class="space-y-2 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-2 lg:grid-cols-3">
+      <ul class="space-y-2 max-w-sm sm:max-w-full sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-2 lg:grid-cols-3">
         {youtubes.map((youtube) => (
           <li class="overflow-hidden h-0 relative w-full" style={youtubeStyles}>
             <iframe

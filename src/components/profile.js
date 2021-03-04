@@ -5,7 +5,7 @@ import Image from "./image";
 const facts = [
   {
     name: "Pronouns",
-    value: "he/him",
+    value: "he / him",
   },
   {
     name: "Nation",
@@ -29,7 +29,7 @@ const facts = [
   },
 ];
 
-const tags = [
+const learnings = [
   { name: "HTML5" },
   { name: "TailwindCSS" },
   { name: "CSS3" },
@@ -119,13 +119,13 @@ const Profile = () => (
         ))}
       </ul>
     </div>
-    <div id="tags">
+    <div id="learnings">
       <div class="font-medium mb-1">Learning</div>
       <ul class="flex overflow-x-auto space-x-2 pb-3">
-        {tags.map((tag) => (
+        {learnings.map((learning) => (
           <li class="border border-gray-300 rounded-xl">
             <span class="flex items-center py-1 px-3 font-light">
-              {tag.name}
+              {learning.name}
             </span>
           </li>
         ))}

@@ -21,7 +21,7 @@ export default function Article({ data: { mdx } }) {
           <h4>{mdx.frontmatter.date}</h4>
         </div>
         <p class="text-blue-500 text-lg font-light">
-          <Link to="/blog/">Go back</Link>
+          <Link to="/posts/">Go back</Link>
         </p>
       </div>
     </Layout>
@@ -29,7 +29,7 @@ export default function Article({ data: { mdx } }) {
 }
 
 export const pageQuery = graphql`
-  query Blog($slug: String) {
+  query Post($slug: String) {
     mdx(fields: { slug: { eq: $slug } }) {
       body
       fields {
