@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 
-export default props => {
+const Meta = props => {
     const baseTitle = "tenzyu.com"
     const baseDesc = ""
     const title = props.title ? `${props.title} - ${baseTitle}` : baseTitle
@@ -22,3 +22,5 @@ export default props => {
       </Helmet>
     )
   }
+
+  export default Meta

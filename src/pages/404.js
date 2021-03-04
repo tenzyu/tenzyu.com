@@ -5,7 +5,7 @@ import Section from "../components/section"
 import { Link } from "gatsby"
 
 
-export default () => (
+const NotFoundPage = () => (
     <Layout>
         <Meta title="404" />
         <Section title="Page Not Found">
@@ -13,3 +13,5 @@ export default () => (
         </Section>
     </Layout>
 );
+
+export default NotFoundPage

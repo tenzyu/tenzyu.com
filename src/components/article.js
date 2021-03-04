@@ -3,7 +3,6 @@ import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer"
 import { Link, graphql } from 'gatsby'
 import Layout from "../layouts/default"
 import Meta from "./meta"
-import "../styles/normalize.module.css"
 
 export default function Article({ data: { mdx } }) {
     return(

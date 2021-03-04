@@ -3,10 +3,12 @@ import '../utils/global.css'
 import Header from "../components/header"
 import Footer from "../components/footer"
 
-export default ({ children }) => (
+const DefaultLayout = ({ children }) => (
   <>
     <Header />
     {children}
     <Footer />
   </>
 )
+
+export default DefaultLayout

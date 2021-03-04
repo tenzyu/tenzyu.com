@@ -1,7 +1,7 @@
 import React from "react"
 import "../styles/moreStyles.module.css"
 
-export default props => {
+const Section = props => {
     const title = props.title;
     return (
         <section id={title} class="container mx-auto px-4 mb-3 lg:max-w-screen-lg">
@@ -10,3 +10,5 @@ export default props => {
         </section>
     )
   }
+
+export default Section

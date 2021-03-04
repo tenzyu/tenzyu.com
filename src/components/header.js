@@ -11,7 +11,7 @@ const navs = [
   },
 ]
 
-export default () => (
+const Header = () => (
   <header class="flex sticky z-50 top-0 left-0 h-16 border-b opacity-90 bg-white mb-4 justify-around">
     <h1 class="my-auto ml-5 text-xl font-logo">
       <Link to={"/"}>tenzyu.com</Link>
@@ -25,3 +25,5 @@ export default () => (
     </nav>
   </header>
 )
+
+export default Header

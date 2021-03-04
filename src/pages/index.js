@@ -121,7 +121,7 @@ const links = [
   },
 ]
 
-export default () => (
+const IndexPage = () =>(
   <Layout>
     <Meta
       title="Homepage"
@@ -208,3 +208,4 @@ export default () => (
     </Section>
   </Layout>
 )
+export default IndexPage
