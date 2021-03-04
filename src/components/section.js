@@ -1,5 +1,4 @@
 import React from "react"
-import "../styles/moreStyles.module.css"
 
 const Section = props => {
     const title = props.title;

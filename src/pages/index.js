@@ -133,13 +133,13 @@ const IndexPage = () =>(
         <Image filename="icon-me.png" alt="me"/>
         </div>
         <div class="ml-3 items-center justify-center lg:w-2/3">
-          <h3 class="text-xl text-gray-700 font-bold">Tenzyu Masuda</h3>
-          <p class="text-sm font-light text-gray-600">a technical high schooler, Coder and Rubik's Cuber from Japan.</p>
+          <h3 class="text-xl font-bold">Tenzyu Masuda</h3>
+          <p class="text-sm font-light">Coder and Rubik's Cuber from Japan.</p>
         </div>
       </div>
       <div id="actions" class="flex space-x-4 mb-2">
-        <a class="block w-1/2 py-2 font-light text-sm text-center border rounded-lg hover:bg-gray-100" href="mailto:tenzyu.off@gmail.com" rel="noreferrer noopener" target="_blank">EMAIL</a>
-        <a class="block w-1/2 py-2 font-light text-sm text-center border rounded-lg hover:bg-gray-100" href="https://www.paypal.me/masudatenzyu" rel="noreferrer noopener" target="_blank">DONATE</a>
+        <a class="block w-1/2 py-2 font-light text-sm text-center border rounded-lg hover:bg-gray-700 duration-200" href="mailto:tenzyu.off@gmail.com" rel="noreferrer noopener" target="_blank">EMAIL</a>
+        <a class="block w-1/2 py-2 font-light text-sm text-center border rounded-lg hover:bg-gray-700 duration-200" href="https://open.mii.community/patreon" rel="noreferrer noopener" target="_blank">SUPPORT</a>
       </div>
       <div id="facts">
         <ul class="grid grid-cols-2 gap-x-4  sm:grid-cols-3 sm:gap-x-0">
@@ -149,8 +149,8 @@ const IndexPage = () =>(
               <Image filename={fact.image} alt={fact.name} />
             </div>
             <div class="w-4/5 my-auto">
-              <div class="text-sm text-gray-800">{fact.name}</div>
-              <div class="text-xs font-light text-gray-600">{fact.value}</div>
+              <div class="text-sm ">{fact.name}</div>
+              <div class="text-xs font-light">{fact.value}</div>
             </div>
           </li>
         ))}
@@ -192,14 +192,14 @@ const IndexPage = () =>(
     <Section title="Links">
     <ul class="space-y-1 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-2 lg:grid-cols-3">
         {links.map(link => (
-          <li class="border rounded-lg border-gray-300 hover:bg-gray-100">
+          <li class="border rounded-lg border-gray-900 hover:bg-gray-700 duration-200">
             <a class="flex" href={link.url} rel="noreferrer noopener" target="_blank">
               <div class="w-1/5 p-2.5 sm:w-16">
                 <Image filename={link.image} alt={link.name} />
               </div>
               <div class="w-4/5 my-auto">
-                <div class="text-lg text-gray-800">{link.name}</div>
-                <div class="text-md font-light text-gray-600">{link.meta}</div>
+                <div class="text-lg">{link.name}</div>
+                <div class="text-md font-light">{link.meta}</div>
               </div>
             </a>
           </li>
