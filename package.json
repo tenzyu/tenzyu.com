@@ -5,7 +5,7 @@
   "description": "tenzyu.com is the website that has written my Accounts, Contents and Profile, hosted by me.",
   "author": "Tenzyu Masuda",
   "scripts": {
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
