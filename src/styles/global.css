@@ -7,11 +7,22 @@ a, button {
 }
 
 html {
-  background-color: #111;
+  background-color: #181818;
   color: #ddd
 }
 
-.header {
-  background-color: #111;
-  opacity: 90%;
+header, footer {
+  background-color:#111;
+}
+
+.inverted {
+  filter: invert(1)
+}
+
+.my-action-button{
+  @apply block px-8 py-2 font-light text-sm text-center rounded-lg border border-gray-100 duration-200
+}
+
+.my-action-button:hover{
+  @apply bg-gray-100 text-gray-900 
 }
