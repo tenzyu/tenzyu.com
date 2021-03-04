@@ -5,3 +5,13 @@
 a, button {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* no highlighting */
 }
+
+html {
+  background-color: #111;
+  color: #ddd
+}
+
+.header {
+  background-color: #111;
+  opacity: 90%;
+}
