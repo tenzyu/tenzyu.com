@@ -3,7 +3,7 @@ import React from "react";
 const Section = (props) => {
   const title = props.title;
   return (
-    <section id={title} class="container mx-auto px-4 mb-3 lg:max-w-screen-lg">
+    <section id={title} class="mb-3">
       <h2 class="text-2xl font-bold mb-3 tracking-wider">{title}</h2>
       {props.children}
     </section>
