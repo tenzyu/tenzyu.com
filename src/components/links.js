@@ -47,7 +47,7 @@ const links = [
 
 const Links = () => (
   <Section title="Links">
-    <ul class="sm:grid sm:grid-cols-2 sm:gap-x-4">
+    <ul class="grid gap-y-2 sm:grid-cols-2 sm:gap-x-4">
       {links.map((link) => (
         <li>
           <a
