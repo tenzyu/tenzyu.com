@@ -36,7 +36,7 @@ const histories = [
     from: "Apr 2015",
     until: "Mar 2018",
     period: "3 years",
-    filename: "apple-book.png",
+    filename: "book.png",
   },
   {
     name: "松山市立三津浜小学校",
@@ -70,7 +70,7 @@ const Histories = () => (
             <div class="rounded-full border border-gray-400 min-w-12 w-12 h-12 flex justify-center items-center mr-2">
               <Image
                 className="w-4"
-                filename={history.filename}
+                filename={`history-${history.filename}`}
                 alt={history.filename}
               />
             </div>
