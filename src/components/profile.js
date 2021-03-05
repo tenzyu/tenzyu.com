@@ -40,6 +40,7 @@ const learnings = [
   { name: "Vue.js" },
   { name: "Gatsby" },
   { name: "React" },
+  { name: "English" },
 ];
 
 const Profile = () => (
@@ -75,7 +76,7 @@ const Profile = () => (
           </div>
         </div>
       </div>
-      <div class="my-4">
+      <div class="my-4 max-w-screen-sm">
         <p>
           升田 天珠, Tenzyu Masuda | Coding, Programming |{" "}
           <a
@@ -108,7 +109,7 @@ const Profile = () => (
       </div>
     </div>
     <div id="facts">
-      <ul class="grid grid-cols-2 gap-x-4 sm:grid-cols-3 sm:gap-x-0">
+      <ul class="grid grid-cols-2 gap-x-4">
         {facts.map((fact) => (
           <li class="flex mb-2">
             <div class="my-auto">

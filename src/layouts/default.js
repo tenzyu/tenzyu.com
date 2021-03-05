@@ -14,7 +14,7 @@ const Styles = {
 const DefaultLayout = ({ children }) => (
   <>
     <Header />
-    <div class="container mx-auto px-4 lg:max-w-screen-lg" style={Styles}>
+    <div class="container mx-auto px-4 max-w-screen-md" style={Styles}>
       {children}
     </div>
     <Footer />
