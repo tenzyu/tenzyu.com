@@ -19,7 +19,7 @@ const histories = [
   },
   {
     name: "デジタル・インフォメーション・テクノロジー（株）",
-    from: "インターンシップ",
+    from: "Internship",
     until: "Oct 2019",
     period: "4 days",
     filename: "company.png",
