@@ -48,7 +48,7 @@ const Profile = () => (
       <div class="flex justify-between">
         <div id="avatar">
           <Image
-            className="rounded-full w-18"
+            className="rounded-full w-18 sm:w-32"
             filename="icon-me.png"
             alt="me"
           />
@@ -57,7 +57,7 @@ const Profile = () => (
         <div id="actions" class="tracking-wider">
           <div class="space-y-2">
             <a
-              class="my-action-button"
+              class="my-action-button sm:px-24"
               href="mailto:tenzyu.off@gmail.com"
               rel="noreferrer noopener"
               target="_blank"
