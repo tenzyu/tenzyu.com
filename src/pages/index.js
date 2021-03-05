@@ -3,6 +3,7 @@ import Layout from "../layouts/default";
 import Meta from "../components/meta";
 import Profile from "../components/profile";
 import Contents from "../components/contents";
+import EducationalBackground from "../components/educational-background";
 import Links from "../components/links";
 
 const IndexPage = () => (
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <Profile />
     <Contents />
     <Links />
+    <EducationalBackground />
   </Layout>
 );
 export default IndexPage;
