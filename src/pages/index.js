@@ -8,8 +8,8 @@ import Links from "../components/links";
 const IndexPage = () => (
   <Layout>
     <Meta
-      title="Homepage"
-      desc="tenzyu.com is the website that has written my Accounts, Contents and Profile, hosted by me."
+      title="Home"
+      desc="tenzyu.com is the personal website of Tenzyu Masuda."
     />
     <Profile />
     <Contents />

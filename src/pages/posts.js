@@ -10,7 +10,7 @@ class PostsIndex extends React.Component {
 
     return (
       <Layout>
-        <Meta title="Posts" desc="記事一覧" />
+        <Meta title="Posts" desc="the index of the posts" />
         <div class="mb-3">
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug;
