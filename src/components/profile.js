@@ -79,7 +79,7 @@ const Profile = () => (
         <p>
           升田 天珠, Tenzyu Masuda | Coding, Programming |{" "}
           <a
-            class="text-blue-600"
+            class="text-blue-500"
             href="https://twitter.com/search?q=%23みぃコミュニティ&src=hashtag_click"
             rel="noreferrer noopener"
             target="_blank"
@@ -88,7 +88,7 @@ const Profile = () => (
           </a>{" "}
           ☞{" "}
           <a
-            class="text-blue-600"
+            class="text-blue-500"
             href="https://mii.community/"
             rel="noreferrer noopener"
             target="_blank"
@@ -97,7 +97,7 @@ const Profile = () => (
           </a>{" "}
           | Recently I studying English. | I'm lovin'{" "}
           <a
-            class="text-blue-600"
+            class="text-blue-500"
             href="https://twitter.com/search?q=%23candyfoxx&src=hashtag_click"
             rel="noreferrer noopener"
             target="_blank"
