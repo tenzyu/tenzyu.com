@@ -108,7 +108,7 @@ const Profile = () => (
       </div>
     </div>
     <div id="facts">
-      <ul class="grid grid-cols-2 gap-x-4  sm:grid-cols-3 sm:gap-x-0">
+      <ul class="grid grid-cols-2 gap-x-4 sm:grid-cols-3 sm:gap-x-0">
         {facts.map((fact) => (
           <li class="flex mb-2">
             <div class="my-auto">
