@@ -40,6 +40,7 @@ const learnings = [
   { name: "Vue.js" },
   { name: "Gatsby" },
   { name: "React" },
+  { name: "English" },
 ];
 
 const Profile = () => (
@@ -48,16 +49,16 @@ const Profile = () => (
       <div class="flex justify-between">
         <div id="avatar">
           <Image
-            className="rounded-full w-18"
+            className="rounded-full w-18 sm:w-32"
             filename="icon-me.png"
             alt="me"
           />
           <h1 class="text-2xl font-bold">tenzyu</h1>
         </div>
-        <div id="actions" class="">
+        <div id="actions" class="tracking-wider">
           <div class="space-y-2">
             <a
-              class="my-action-button"
+              class="my-action-button sm:px-24"
               href="mailto:tenzyu.off@gmail.com"
               rel="noreferrer noopener"
               target="_blank"
@@ -75,11 +76,11 @@ const Profile = () => (
           </div>
         </div>
       </div>
-      <div class="my-4">
+      <div class="my-4 max-w-screen-sm">
         <p>
           升田 天珠, Tenzyu Masuda | Coding, Programming |{" "}
           <a
-            class="text-blue-600"
+            class="text-blue-500"
             href="https://twitter.com/search?q=%23みぃコミュニティ&src=hashtag_click"
             rel="noreferrer noopener"
             target="_blank"
@@ -88,7 +89,7 @@ const Profile = () => (
           </a>{" "}
           ☞{" "}
           <a
-            class="text-blue-600"
+            class="text-blue-500"
             href="https://mii.community/"
             rel="noreferrer noopener"
             target="_blank"
@@ -97,7 +98,7 @@ const Profile = () => (
           </a>{" "}
           | Recently I studying English. | I'm lovin'{" "}
           <a
-            class="text-blue-600"
+            class="text-blue-500"
             href="https://twitter.com/search?q=%23candyfoxx&src=hashtag_click"
             rel="noreferrer noopener"
             target="_blank"
@@ -108,11 +109,11 @@ const Profile = () => (
       </div>
     </div>
     <div id="facts">
-      <ul class="grid grid-cols-2 gap-x-4  sm:grid-cols-3 sm:gap-x-0">
+      <ul class="grid grid-cols-2 gap-x-4">
         {facts.map((fact) => (
           <li class="flex mb-2">
             <div class="my-auto">
-              <div class="font-medium">{fact.name}</div>
+              <div class="font-medium -mb-1">{fact.name}</div>
               <div class="font-light">{fact.value}</div>
             </div>
           </li>

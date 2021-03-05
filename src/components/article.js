@@ -1,7 +1,7 @@
 import React from "react";
 import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer";
 import { Link, graphql } from "gatsby";
-import Layout from "../layouts/default";
+import Layout from "../layouts/article";
 import Meta from "./meta";
 
 export default function Article({ data: { mdx } }) {
