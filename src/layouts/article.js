@@ -11,7 +11,7 @@ const Styles = {
   minHeight: "calc(100vh - 160px + 1px)",
 };
 
-const DefaultLayout = ({ children }) => (
+const ArticleLayout = ({ children }) => (
   <>
     <Header />
     <div class="container mx-auto px-4 max-w-screen-md" style={Styles}>
@@ -21,4 +21,4 @@ const DefaultLayout = ({ children }) => (
   </>
 );
 
-export default DefaultLayout;
+export default ArticleLayout;
