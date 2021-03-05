@@ -54,7 +54,7 @@ const Profile = () => (
           />
           <h1 class="text-2xl font-bold">tenzyu</h1>
         </div>
-        <div id="actions" class="">
+        <div id="actions" class="tracking-wider">
           <div class="space-y-2">
             <a
               class="my-action-button"
@@ -112,7 +112,7 @@ const Profile = () => (
         {facts.map((fact) => (
           <li class="flex mb-2">
             <div class="my-auto">
-              <div class="font-medium">{fact.name}</div>
+              <div class="font-medium -mb-1">{fact.name}</div>
               <div class="font-light">{fact.value}</div>
             </div>
           </li>
