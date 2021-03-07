@@ -1,25 +1,6 @@
 .header {
-  display: flex;
-  position: sticky;
-  z-index: 50;
-  top: 0;
-  left: 0;
-  height: 4rem;
-  margin-bottom: 1rem;
   background-color: #111;
-  width: 100%;
-  padding: 0 4px;
-  > .logo {
-    margin: 0 auto;
-    align-items: center;
-    display: flex;
-    width: 100%;
-    max-width: 1024px;
-    justify-content: space-between;
-  }
-  > .nav > a {
-    padding-right: 1.5rem /* 24px */;
-    font-size: 1.25rem /* 20px */;
-    line-height: 1.75rem /* 28px */;
+  img {
+    filter: invert(1);
   }
 }
