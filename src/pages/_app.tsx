@@ -2,6 +2,7 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import 'sanitize.css';
 import '../styles/globals.css';
+import { TheHeader } from '../components/TheHeader';
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => (
   <>
@@ -13,6 +14,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => (
       <link rel="shortcut icon" href="/favicon.ico" key="shortcutIcon" />
       {/* <link rel="manifest" href="/manifest.json" /> */}
     </Head>
+    <TheHeader />
     <Component {...pageProps} />
   </>
 );
