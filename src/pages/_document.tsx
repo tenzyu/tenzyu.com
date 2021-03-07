@@ -1,8 +1,6 @@
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
 
-type Props = { unknown: unknown };
-
-class Document extends NextDocument<Props> {
+class MyDocument extends NextDocument {
   render(): JSX.Element {
     return (
       <Html lang="ja">
@@ -16,4 +14,4 @@ class Document extends NextDocument<Props> {
   }
 }
 
-export default Document;
+export default MyDocument;

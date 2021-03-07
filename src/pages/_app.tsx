@@ -1,8 +1,9 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import 'sanitize.css';
+import '../styles/globals.css';
 
-const App = ({ Component, pageProps }: AppProps): JSX.Element => (
+const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => (
   <>
     <Head>
       <meta
@@ -16,4 +17,4 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => (
   </>
 );
 
-export default App;
+export default MyApp;
