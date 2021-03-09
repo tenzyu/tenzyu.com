@@ -1,37 +1,56 @@
 {
   "name": "tenzyu.com",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "private": true,
-  "description": "tenzyu.com is the website that has written my Accounts, Contents and Profile, hosted by me.",
-  "author": "Tenzyu Masuda",
   "scripts": {
-    "dev": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "sp": "gatsby develop -H 0.0.0.0"
+    "dev": "next dev -H 0.0.0.0",
+    "build": "rm -rf ./build && NODE_ENV=production next build",
+    "start": "next start -p 8080",
+    "lint": "npm run lint:prettier & npm run lint:eslint",
+    "lint:prettier": "prettier --write 'src/**/*.{ts,tsx}'",
+    "lint:eslint": "eslint 'src/**/*.{ts,tsx}'",
+    "export": "next export"
   },
-  "license": "MIT",
   "dependencies": {
-    "@mdx-js/mdx": "^1.6.22",
-    "@mdx-js/react": "^1.6.22",
-    "gatsby": "^3.0.1",
-    "gatsby-image": "^3.0.0",
-    "gatsby-plugin-google-analytics": "^3.0.0",
-    "gatsby-plugin-manifest": "^3.0.0",
-    "gatsby-plugin-mdx": "^2.0.0",
-    "gatsby-plugin-postcss": "^4.0.0",
-    "gatsby-plugin-react-helmet": "^4.0.0",
-    "gatsby-plugin-sharp": "^3.0.0",
-    "gatsby-source-filesystem": "^3.0.0",
-    "gatsby-transformer-sharp": "^3.0.0",
-    "postcss": "^8.2.7",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0",
-    "tailwindcss": "^2.0.3"
+    "next": "10.0.8",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   },
+  "description": "This is my website.",
   "main": "index.js",
-  "repository": "https://github.com/tenzyu/tenzyu.com"
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.4.0",
+    "@types/node": "^14.14.31",
+    "@types/react": "^17.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "autoprefixer": "^10.2.5",
+    "date-fns": "^2.19.0",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gray-matter": "^4.0.2",
+    "postcss": "^8.2.7",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.2.1",
+    "remark": "^13.0.0",
+    "remark-html": "^13.0.1",
+    "sanitize.css": "^12.0.1",
+    "sass": "^1.32.8",
+    "tailwindcss": "^2.0.3",
+    "typescript": "^4.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tenzyu/tenzyu.com.git"
+  },
+  "author": "Tenzyu Masuda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tenzyu/tenzyu.com/issues"
+  },
+  "homepage": "https://github.com/tenzyu/tenzyu.com#readme"
 }
