@@ -1,6 +1,6 @@
 import React from 'react';
-import { links } from './MyLinksData';
 import { Section } from '../Section';
+import { links } from './MyLinksData';
 
 const MyLinks: React.FC = () => (
   <Section title="Links">

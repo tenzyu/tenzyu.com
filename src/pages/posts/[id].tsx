@@ -1,7 +1,7 @@
-import Head from 'next/head';
-import { getAllPostIds, getPostData } from '../../lib/posts';
-import { PostDate } from '../../components/PostDate';
 import { GetStaticProps, GetStaticPaths } from 'next';
+import Head from 'next/head';
+import { PostDate } from '../../components/PostDate';
+import { getAllPostIds, getPostData } from '../../lib/posts';
 
 export default function Post({
   postData,

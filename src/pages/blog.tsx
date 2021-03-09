@@ -1,8 +1,8 @@
-import { getSortedPostsData } from '../lib/posts';
+import { GetStaticProps } from 'next';
+import Head from 'next/head';
 import Link from 'next/link';
 import { PostDate } from '../components/PostDate';
-import Head from 'next/head';
-import { GetStaticProps } from 'next';
+import { getSortedPostsData } from '../lib/posts';
 
 export default function Posts({
   allPostsData,

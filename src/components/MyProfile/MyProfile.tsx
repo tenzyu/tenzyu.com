@@ -1,8 +1,8 @@
-import React from 'react';
 import Image from 'next/image';
-import { facts, learnings } from './MyProfileData';
-import styles from './MyProfile.module.scss';
+import React from 'react';
 import { Section } from '../Section';
+import styles from './MyProfile.module.scss';
+import { facts, learnings } from './MyProfileData';
 
 const MyProfile: React.FC = () => (
   <Section title="Profile">

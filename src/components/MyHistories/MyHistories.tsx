@@ -1,6 +1,6 @@
+import Image from 'next/image';
 import React from 'react';
 import { Section } from '../Section';
-import Image from 'next/image';
 import { histories } from './MyHistoriesData';
 
 const MyHistories: React.FC = () => (

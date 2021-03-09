@@ -16,26 +16,42 @@
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
-    }
+    },
+    "tsconfigRootDir": "."
   },
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".ts"]
+      }
     }
   },
-  "plugins": ["react-hooks", "react", "@typescript-eslint", "prettier"],
+  "plugins": [
+    "react-hooks",
+    "react",
+    "@typescript-eslint",
+    "import",
+    "prettier"
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:import/errors",
     "prettier"
   ],
   "rules": {
     "react/prop-types": "off",
     "prettier/prettier": "error",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "sort-imports": 0,
+    "import/order": [2, { "alphabetize": { "order": "asc" } }],
+    "import/no-unresolved": "off"
   },
   "overrides": [
     {

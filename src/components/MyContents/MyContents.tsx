@@ -1,6 +1,6 @@
 import React from 'react';
-import { repositories, youtubes } from './MyContentsData';
 import { Section } from '../Section';
+import { repositories, youtubes } from './MyContentsData';
 
 const youtubeStyles = {
   paddingTop: '56.25%',

@@ -1,13 +1,20 @@
 # tenzyu.com
 
-This is my website.
+## This is my website.
 
 > [Go to tenzyu.com](https://tenzyu.com/)
 
-- tenzyu.com is under [MIT license](https://github.com/tenzyu/tenzyu.com/blob/master/LICENSE).
+- It is basically written in [TypeScript](https://www.typescriptlang.org/).
+- It is built using [Next.js 10](https://nextjs.org/).
+- Deployed on [Vercel](https://vercel.com/).
+- Styled with [TailwindCSS](https://tailwindcss.com/) and [Sass](https://sass-lang.com/).
 
 ### If you find an issue
 
-Please [create a new issue](https://github.com/tenzyu/tenzyu.com/issues/new/choose) in English or Japanese.
+Please [create a new issue](https://github.com/tenzyu/tenzyu.com/issues/new/) in English or Japanese.
 
-If you have any questions, please feel free to send me a message. The contact information for me is summarized [here](https://tenzyu.com/#Links).
+If you have any questions, please feel free to send me a message.
+
+tenzyu.com is under [MIT license](https://github.com/tenzyu/tenzyu.com/blob/master/LICENSE).
+
+> [Go to tenzyu.com](https://tenzyu.com/)
