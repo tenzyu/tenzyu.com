@@ -17,8 +17,8 @@ const TheHeader: React.FC = () => (
           className="cursor-pointer"
         />
       </Link>
-      <nav className="text-xl pr-6">
-        <Link href="/posts/">Posts</Link>
+      <nav className="text-xl pr-3">
+        <Link href="/blog/">Blog</Link>
       </nav>
     </div>
   </header>
