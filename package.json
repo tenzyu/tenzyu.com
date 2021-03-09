@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
-    "build": "rm -rf ./build && NODE_ENV=production next build",
+    "build": "next build",
+    "dbuild": "rm -rf ./build && NODE_ENV=production next build",
     "start": "next start -p 8080",
     "lint": "npm run lint:prettier & npm run lint:eslint",
     "lint:prettier": "prettier --write 'src/**/*.{ts,tsx}'",
