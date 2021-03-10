@@ -1,13 +1,16 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
-import Head from 'next/head';
 import { PostDate } from '../../components/PostDate';
+import { SEO } from '../../components/SEO';
 import { getAllPostIds, getPostData, PostData } from '../../lib/posts';
 
 const Post: React.FC<{ postData: PostData }> = ({ postData }) => (
   <>
-    <Head>
-      <title>{postData.title} - tenzyu.com</title>
-    </Head>
+    <SEO
+      title={postData.title}
+      description=""
+      image="icon-me.png"
+      url={`https://tenzyu.com/posts/${postData.id}/`}
+    />
     <article className="prose prose-red mx-auto">
       <h1>{postData.title}</h1>
       <PostDate dateString={postData.date} />
