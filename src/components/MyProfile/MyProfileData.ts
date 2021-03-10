@@ -35,6 +35,7 @@ export const learnings = [
   { name: 'Nuxt.js' },
   { name: 'Vue.js' },
   { name: 'Gatsby' },
+  { name: 'Next.js' },
   { name: 'React' },
   { name: 'English' },
 ];
