@@ -4,7 +4,7 @@ import { Section } from '../Section';
 import styles from './MyProfile.module.scss';
 import { facts, learnings } from './MyProfileData';
 
-const MyProfile: React.FC = () => (
+export const MyProfile: React.FC = () => (
   <Section title="Profile">
     <div id="bio">
       <div className="flex justify-between">
@@ -93,5 +93,3 @@ const MyProfile: React.FC = () => (
     </div>
   </Section>
 );
-
-export { MyProfile };

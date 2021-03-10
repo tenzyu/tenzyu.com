@@ -2,7 +2,7 @@ import React from 'react';
 import { Section } from '../Section';
 import { links } from './MyLinksData';
 
-const MyLinks: React.FC = () => (
+export const MyLinks: React.FC = () => (
   <Section title="Links">
     <ul className="grid gap-y-2 sm:grid-cols-2 sm:gap-x-4">
       {links.map((link) => (
@@ -22,5 +22,3 @@ const MyLinks: React.FC = () => (
     </ul>
   </Section>
 );
-
-export { MyLinks };

@@ -2,11 +2,7 @@ import React from 'react';
 import { Section } from '../Section';
 import { repositories, youtubes } from './MyContentsData';
 
-const youtubeStyles = {
-  paddingTop: '56.25%',
-};
-
-const MyContents: React.FC = () => (
+export const MyContents: React.FC = () => (
   <Section title="Contents">
     <div className="mb-3">
       <h3 className="text-lg mb-2">Repositories</h3>
@@ -34,7 +30,9 @@ const MyContents: React.FC = () => (
         {youtubes.map((youtube) => (
           <li
             className="overflow-hidden h-0 relative w-full"
-            style={youtubeStyles}
+            style={{
+              paddingTop: '56.25%',
+            }}
             key={youtube.src}
           >
             <iframe
@@ -51,5 +49,3 @@ const MyContents: React.FC = () => (
     </div>
   </Section>
 );
-
-export { MyContents };

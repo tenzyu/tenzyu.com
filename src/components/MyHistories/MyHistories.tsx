@@ -3,7 +3,7 @@ import React from 'react';
 import { Section } from '../Section';
 import { histories } from './MyHistoriesData';
 
-const MyHistories: React.FC = () => (
+export const MyHistories: React.FC = () => (
   <Section title="History">
     <div className="mb-3">
       <ul className="space-y-3">
@@ -33,5 +33,3 @@ const MyHistories: React.FC = () => (
     </div>
   </Section>
 );
-
-export { MyHistories };
