@@ -37,5 +37,7 @@ export const learnings = [
   { name: 'Gatsby' },
   { name: 'Next.js' },
   { name: 'React' },
+  { name: '日本語' },
   { name: 'English' },
+  { name: '한국어' },
 ];
