@@ -34,7 +34,6 @@ export const learnings = [
   { name: 'TypeScript' },
   { name: 'Nuxt.js' },
   { name: 'Vue.js' },
-  { name: 'Gatsby' },
   { name: 'Next.js' },
   { name: 'React' },
   { name: '日本語' },
