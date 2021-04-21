@@ -1,4 +1,4 @@
-# tenzyu.com
+# My Website
 
 > [Go to tenzyu.com](https://tenzyu.com/)
 
